@@ -1,0 +1,23 @@
+﻿<Window x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Icon="./assets/textbox_icon.png"
+        Title="Cuadros de texto" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="71,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="es-es" Text="Nombre"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="71,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="es-es" Text="Apellido"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="71,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="es-es" Text="Edad"/></TextBlock>
+        <TextBox x:Name="texto1TextBox" HorizontalAlignment="Left" Tag="1" Margin="71,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="22" KeyDown="TextBox_KeyDown"/>
+        <TextBox x:Name="texto2TextBox" HorizontalAlignment="Left" Tag="2" Margin="71,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="189" FontSize="22" KeyDown="TextBox_KeyDown"/>
+        <TextBox x:Name="texto3TextBox" HorizontalAlignment="Left" Tag="3" Margin="71,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="22" KeyDown="TextBox_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Text=""/>
+        <TextBlock x:Name="ayuda1TextBlock" HorizontalAlignment="Left" Margin="284,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text=""/>
+        <TextBlock x:Name="ayuda2TextBlock" HorizontalAlignment="Left" Margin="284,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text=""/>
+        <TextBlock x:Name="ayuda3TextBlock" HorizontalAlignment="Left" Margin="284,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text="" Foreground="#FFA70000"/>
+
+    </Grid>
+</Window>
