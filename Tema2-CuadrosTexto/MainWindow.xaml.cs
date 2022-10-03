@@ -40,15 +40,19 @@ namespace Tema2_CuadrosTexto
                     else ayuda2TextBlock.Text = "";
                 }
             }
-            else if ((sender as TextBox).Name == "texto3TextBox")
-            {
-                if(e.Key == Key.F2)
-                {
-                    if (int.Parse(texto3TextBox.Text) == texto3TextBox.Text.Equals(typeof(int))) ayuda3TextBlock.Text = "";
-                    else ayuda3TextBlock.Text = "Edad incorrecta";
-                }
-            }
             
+        }
+
+        private void TextBox_KeyDown2(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F2)
+            {
+                if ((sender as TextBox).Text.Equals(typeof(int)))
+                {
+                    ayuda3TextBlock.Text = "";
+                }
+                else ayuda3TextBlock.Text = "Edad incorrecta";
+            }
         }
     }
 }
