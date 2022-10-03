@@ -23,22 +23,17 @@ namespace Tema2_CuadrosTexto
         public MainWindow()
         {
             InitializeComponent();
+            texto1TextBox.Tag = ayuda1TextBlock;
+            texto2TextBox.Tag = ayuda2TextBlock;
         }
 
         private void TextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.F1)
             {
-                if ((sender as TextBox).Name == "texto1TextBox")
-                {
-                    if (ayuda1TextBlock.Text.Length == 0) ayuda1TextBlock.Text = "Nombre del cliente";
-                    else ayuda1TextBlock.Text = "";
-                }
-                else
-                {
-                    if (ayuda2TextBlock.Text.Length == 0) ayuda2TextBlock.Text = "Apellido del cliente";
-                    else ayuda2TextBlock.Text = "";
-                }
+                TextBlock texto = (TextBlock)(sender as TextBox).Tag;
+                if (texto.Visibility == Visibility.Hidden) texto.Visibility = Visibility.Visible;
+                else texto.Visibility = Visibility.Hidden;
             }
             
         }
@@ -47,7 +42,7 @@ namespace Tema2_CuadrosTexto
         {
             if (e.Key == Key.F2)
             {
-                if ((sender as TextBox).Text.Equals(typeof(int)))
+                if (int.TryParse((sender as TextBox).Text, out _))
                 {
                     ayuda3TextBlock.Text = "";
                 }

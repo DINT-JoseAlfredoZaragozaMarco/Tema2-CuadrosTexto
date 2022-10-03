@@ -12,11 +12,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="71,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="es-es" Text="Apellido"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="71,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"><Run Language="es-es" Text="Edad"/></TextBlock>
         <TextBox x:Name="texto1TextBox" HorizontalAlignment="Left" Tag="1" Margin="71,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="22" KeyDown="TextBox_KeyDown"/>
-        <TextBox x:Name="texto2TextBox" HorizontalAlignment="Left" Tag="2" Margin="71,202,0,175" TextWrapping="Wrap" VerticalAlignment="Center" Width="189" FontSize="22" KeyDown="TextBox_KeyDown" Height="42"/>
+        <TextBox x:Name="texto2TextBox" HorizontalAlignment="Left" Tag="2" Margin="71,214,0,165" TextWrapping="Wrap" VerticalAlignment="Center" Width="189" FontSize="22" KeyDown="TextBox_KeyDown" Height="40"/>
         <TextBox x:Name="texto3TextBox" HorizontalAlignment="Left" Tag="3" Margin="71,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="22" KeyDown="TextBox_KeyDown2"/>
         <TextBlock HorizontalAlignment="Left" Margin="284,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Text=""/>
-        <TextBlock x:Name="ayuda1TextBlock" HorizontalAlignment="Left" Margin="284,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text="" IsEnabled="False"/>
-        <TextBlock x:Name="ayuda2TextBlock" HorizontalAlignment="Left" Margin="284,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text="" IsEnabled="False"/>
+        <TextBlock x:Name="ayuda1TextBlock" Visibility="Hidden" HorizontalAlignment="Left" Margin="284,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" IsEnabled="False"><Span Foreground="#FFA31515" FontSize="12.6666666666667" FontFamily="Consolas"><Run Text="Nombre del cliente"/></Span></TextBlock>
+        <TextBlock x:Name="ayuda2TextBlock" Visibility="Hidden" HorizontalAlignment="Left" Margin="284,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" IsEnabled="False"><Span Foreground="#FFA31515" FontSize="12.6666666666667" FontFamily="Consolas"><Run Text="Apellido del cliente"/></Span></TextBlock>
         <TextBlock x:Name="ayuda3TextBlock" HorizontalAlignment="Left" Margin="284,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="242" Text="" Foreground="#FFA70000"/>
 
     </Grid>
